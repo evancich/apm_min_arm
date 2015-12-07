@@ -1,0 +1,36 @@
+Subscription.cpp.o: \
+ /home/apmsel4/ardupilot/modules/PX4Firmware/src/modules/uORB/Subscription.cpp \
+ /home/apmsel4/ardupilot/modules/PX4Firmware/src/include/visibility.h \
+ /home/apmsel4/ardupilot/modules/PX4Firmware/src/modules/uORB/Subscription.hpp \
+ /home/apmsel4/ardupilot/modules/PX4Firmware/Build/px4fmu-v2_APM.build/nuttx-export/include/assert.h \
+ /home/apmsel4/ardupilot/modules/PX4Firmware/Build/px4fmu-v2_APM.build/nuttx-export/include/nuttx/compiler.h \
+ /home/apmsel4/ardupilot/modules/PX4Firmware/Build/px4fmu-v2_APM.build/nuttx-export/include/stdint.h \
+ /home/apmsel4/ardupilot/modules/PX4Firmware/Build/px4fmu-v2_APM.build/nuttx-export/include/nuttx/config.h \
+ /home/apmsel4/ardupilot/modules/PX4Firmware/Build/px4fmu-v2_APM.build/nuttx-export/include/arch/types.h \
+ /home/apmsel4/ardupilot/modules/PX4Firmware/Build/px4fmu-v2_APM.build/nuttx-export/include/limits.h \
+ /home/apmsel4/ardupilot/modules/PX4Firmware/Build/px4fmu-v2_APM.build/nuttx-export/include/arch/limits.h \
+ /home/apmsel4/ardupilot/modules/PX4Firmware/src//modules/uORB/uORB.h \
+ /home/apmsel4/ardupilot/modules/PX4Firmware/Build/px4fmu-v2_APM.build/nuttx-export/include/sys/types.h \
+ /home/apmsel4/ardupilot/modules/PX4Firmware/Build/px4fmu-v2_APM.build/nuttx-export/include/stdbool.h \
+ /home/apmsel4/ardupilot/modules/PX4Firmware/src//modules/systemlib/visibility.h \
+ /home/apmsel4/ardupilot/modules/PX4Firmware/src/include/containers/List.hpp \
+ /home/apmsel4/ardupilot/modules/PX4Firmware/src/modules/uORB/topics/parameter_update.h \
+ /home/apmsel4/ardupilot/modules/PX4Firmware/src/modules/uORB/topics/actuator_controls.h \
+ /home/apmsel4/ardupilot/modules/PX4Firmware/src/modules/uORB/topics/vehicle_gps_position.h \
+ /home/apmsel4/ardupilot/modules/PX4Firmware/src/modules/uORB/topics/satellite_info.h \
+ /home/apmsel4/ardupilot/modules/PX4Firmware/src/modules/uORB/topics/../uORB.h \
+ /home/apmsel4/ardupilot/modules/PX4Firmware/src/modules/uORB/topics/sensor_combined.h \
+ /home/apmsel4/ardupilot/modules/PX4Firmware/src/modules/uORB/topics/vehicle_attitude.h \
+ /home/apmsel4/ardupilot/modules/PX4Firmware/src/modules/uORB/topics/vehicle_global_position.h \
+ /home/apmsel4/ardupilot/modules/PX4Firmware/src/modules/uORB/topics/encoders.h \
+ /home/apmsel4/ardupilot/modules/PX4Firmware/src/modules/uORB/topics/position_setpoint_triplet.h \
+ /home/apmsel4/ardupilot/modules/PX4Firmware/src//modules/uORB/topics/position_setpoint.h \
+ /home/apmsel4/ardupilot/modules/PX4Firmware/src/modules/uORB/topics/vehicle_status.h \
+ /home/apmsel4/ardupilot/modules/PX4Firmware/src/modules/uORB/topics/manual_control_setpoint.h \
+ /home/apmsel4/ardupilot/modules/PX4Firmware/src/modules/uORB/topics/vehicle_local_position_setpoint.h \
+ /home/apmsel4/ardupilot/modules/PX4Firmware/src/modules/uORB/topics/vehicle_local_position.h \
+ /home/apmsel4/ardupilot/modules/PX4Firmware/src/modules/uORB/topics/vehicle_attitude_setpoint.h \
+ /home/apmsel4/ardupilot/modules/PX4Firmware/src/modules/uORB/topics/vehicle_rates_setpoint.h \
+ /home/apmsel4/ardupilot/modules/PX4Firmware/src/modules/uORB/topics/rc_channels.h \
+ /home/apmsel4/ardupilot/modules/PX4Firmware/src/modules/uORB/topics/vehicle_control_mode.h \
+ /home/apmsel4/ardupilot/modules/PX4Firmware/src/modules/uORB/topics/actuator_armed.h

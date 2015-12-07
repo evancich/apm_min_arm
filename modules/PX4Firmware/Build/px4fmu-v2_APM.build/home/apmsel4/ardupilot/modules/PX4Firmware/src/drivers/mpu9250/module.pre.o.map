@@ -1,0 +1,1330 @@
+
+Memory Configuration
+
+Name             Origin             Length             Attributes
+*default*        0x00000000         0xffffffff
+
+Linker script and memory map
+
+LOAD mpu9250.cpp.o
+
+.interp
+ *(.interp)
+
+.note.gnu.build-id
+ *(.note.gnu.build-id)
+
+.hash
+ *(.hash)
+
+.gnu.hash
+ *(.gnu.hash)
+
+.dynsym
+ *(.dynsym)
+
+.dynstr
+ *(.dynstr)
+
+.gnu.version
+ *(.gnu.version)
+
+.gnu.version_d
+ *(.gnu.version_d)
+
+.gnu.version_r
+ *(.gnu.version_r)
+
+.rel.init
+ *(.rel.init)
+
+.rela.init
+ *(.rela.init)
+
+.rel.text
+ *(.rel.text)
+
+.rela.text
+ *(.rela.text)
+
+.rel.fini
+ *(.rel.fini)
+
+.rela.fini
+ *(.rela.fini)
+
+.rel.rodata
+ *(.rel.rodata)
+
+.rela.rodata
+ *(.rela.rodata)
+
+.rel.data.rel.ro
+ *(.rel.data.rel.ro)
+
+.rela.data.rel.ro
+ *(.rela.data.rel.ro)
+
+.rel.data
+ *(.rel.data)
+
+.rela.data
+ *(.rela.data)
+
+.rel.tdata
+ *(.rel.tdata)
+
+.rela.tdata
+ *(.rela.tdata)
+
+.rel.tbss
+ *(.rel.tbss)
+
+.rela.tbss
+ *(.rela.tbss)
+
+.rel.ctors
+ *(.rel.ctors)
+
+.rela.ctors
+ *(.rela.ctors)
+
+.rel.dtors
+ *(.rel.dtors)
+
+.rela.dtors
+ *(.rela.dtors)
+
+.rel.got
+ *(.rel.got)
+
+.rela.got
+ *(.rela.got)
+
+.rel.bss
+ *(.rel.bss)
+
+.rela.bss
+ *(.rela.bss)
+
+.rel.iplt
+ *(.rel.iplt)
+
+.rela.iplt
+ *(.rela.iplt)
+
+.rel.plt
+ *(.rel.plt)
+
+.rela.plt
+ *(.rela.plt)
+
+.init
+ *(SORT(.init))
+
+.plt
+ *(.plt)
+
+.iplt
+ *(.iplt)
+
+.text           0x00000000        0x0
+ *(.text .stub)
+ .text          0x00000000        0x0 mpu9250.cpp.o
+ *(.gnu.warning)
+
+.text._ZN12MPU9250_gyro4readEP4filePcj
+                0x00000000       0x10
+ .text._ZN12MPU9250_gyro4readEP4filePcj
+                0x00000000       0x10 mpu9250.cpp.o
+                0x00000000                MPU9250_gyro::read(file*, char*, unsigned int)
+
+.text._ZN7MPU9250D2Ev
+                0x00000000       0x94
+ .text._ZN7MPU9250D2Ev
+                0x00000000       0x94 mpu9250.cpp.o
+                0x00000000                MPU9250::~MPU9250()
+                0x00000000                MPU9250::~MPU9250()
+
+.text._ZN7MPU9250D0Ev
+                0x00000000       0x12
+ .text._ZN7MPU9250D0Ev
+                0x00000000       0x12 mpu9250.cpp.o
+                0x00000000                MPU9250::~MPU9250()
+
+.text._ZN12MPU9250_gyroD2Ev
+                0x00000000       0x28
+ .text._ZN12MPU9250_gyroD2Ev
+                0x00000000       0x28 mpu9250.cpp.o
+                0x00000000                MPU9250_gyro::~MPU9250_gyro()
+                0x00000000                MPU9250_gyro::~MPU9250_gyro()
+
+.text._ZN12MPU9250_gyroD0Ev
+                0x00000000       0x12
+ .text._ZN12MPU9250_gyroD0Ev
+                0x00000000       0x12 mpu9250.cpp.o
+                0x00000000                MPU9250_gyro::~MPU9250_gyro()
+
+.text._ZN4math15LowPassFilter2pC2Eff
+                0x00000000       0x20
+ .text._ZN4math15LowPassFilter2pC2Eff
+                0x00000000       0x20 mpu9250.cpp.o
+                0x00000000                math::LowPassFilter2p::LowPassFilter2p(float, float)
+                0x00000000                math::LowPassFilter2p::LowPassFilter2p(float, float)
+
+.text._ZN7MPU92508read_regEjj
+                0x00000000       0x2e
+ .text._ZN7MPU92508read_regEjj
+                0x00000000       0x2e mpu9250.cpp.o
+                0x00000000                MPU9250::read_reg(unsigned int, unsigned int)
+
+.text._ZN7MPU92505probeEv
+                0x00000000       0x54
+ .text._ZN7MPU92505probeEv
+                0x00000000       0x54 mpu9250.cpp.o
+                0x00000000                MPU9250::probe()
+
+.text._ZN7MPU925010read_reg16Ej
+                0x00000000       0x40
+ .text._ZN7MPU925010read_reg16Ej
+                0x00000000       0x40 mpu9250.cpp.o
+                0x00000000                MPU9250::read_reg16(unsigned int)
+
+.text._ZN7MPU92509write_regEjh
+                0x00000000       0x28
+ .text._ZN7MPU92509write_regEjh
+                0x00000000       0x28 mpu9250.cpp.o
+                0x00000000                MPU9250::write_reg(unsigned int, unsigned char)
+
+.text._ZN7MPU925010modify_regEjhh
+                0x00000000       0x28
+ .text._ZN7MPU925010modify_regEjhh
+                0x00000000       0x28 mpu9250.cpp.o
+                0x00000000                MPU9250::modify_reg(unsigned int, unsigned char, unsigned char)
+
+.text._ZN7MPU925017write_checked_regEjh
+                0x00000000       0x30
+ .text._ZN7MPU925017write_checked_regEjh
+                0x00000000       0x30 mpu9250.cpp.o
+                0x00000000                MPU9250::write_checked_reg(unsigned int, unsigned char)
+
+.text._ZN7MPU925016_set_sample_rateEj
+                0x00000000       0x48
+ .text._ZN7MPU925016_set_sample_rateEj
+                0x00000000       0x48 mpu9250.cpp.o
+                0x00000000                MPU9250::_set_sample_rate(unsigned int)
+
+.text._ZN7MPU925016_set_dlpf_filterEt
+                0x00000000       0x72
+ .text._ZN7MPU925016_set_dlpf_filterEt
+                0x00000000       0x72 mpu9250.cpp.o
+                0x00000000                MPU9250::_set_dlpf_filter(unsigned short)
+
+.text._ZN7MPU925015set_accel_rangeEj
+                0x00000000       0x88
+ .text._ZN7MPU925015set_accel_rangeEj
+                0x00000000       0x88 mpu9250.cpp.o
+                0x00000000                MPU9250::set_accel_range(unsigned int)
+
+.text._ZN7MPU92505resetEv
+                0x00000000      0x104
+ .text._ZN7MPU92505resetEv
+                0x00000000      0x104 mpu9250.cpp.o
+                0x00000000                MPU9250::reset()
+
+.text._ZN7MPU92505startEv
+                0x00000000       0x48
+ .text._ZN7MPU92505startEv
+                0x00000000       0x48 mpu9250.cpp.o
+                0x00000000                MPU9250::start()
+
+.text._ZN7MPU92504stopEv
+                0x00000000        0x6
+ .text._ZN7MPU92504stopEv
+                0x00000000        0x6 mpu9250.cpp.o
+                0x00000000                MPU9250::stop()
+
+.text._ZN7MPU925015check_registersEv
+                0x00000000       0xb0
+ .text._ZN7MPU925015check_registersEv
+                0x00000000       0xb0 mpu9250.cpp.o
+                0x00000000                MPU9250::check_registers()
+
+.text._ZN7MPU925010print_infoEv
+                0x00000000       0xdc
+ .text._ZN7MPU925010print_infoEv
+                0x00000000       0xdc mpu9250.cpp.o
+                0x00000000                MPU9250::print_info()
+
+.text._ZN7MPU925015print_registersEv
+                0x00000000       0x58
+ .text._ZN7MPU925015print_registersEv
+                0x00000000       0x58 mpu9250.cpp.o
+                0x00000000                MPU9250::print_registers()
+
+.text._ZN7MPU925010test_errorEv
+                0x00000000       0x34
+ .text._ZN7MPU925010test_errorEv
+                0x00000000       0x34 mpu9250.cpp.o
+                0x00000000                MPU9250::test_error()
+
+.text._ZN12MPU9250_gyroC2EP7MPU9250PKc
+                0x00000000       0x2c
+ .text._ZN12MPU9250_gyroC2EP7MPU9250PKc
+                0x00000000       0x2c mpu9250.cpp.o
+                0x00000000                MPU9250_gyro::MPU9250_gyro(MPU9250*, char const*)
+                0x00000000                MPU9250_gyro::MPU9250_gyro(MPU9250*, char const*)
+
+.text._ZN7MPU9250C2EiPKcS1_9spi_dev_e8Rotation
+                0x00000000      0x248
+ .text._ZN7MPU9250C2EiPKcS1_9spi_dev_e8Rotation
+                0x00000000      0x248 mpu9250.cpp.o
+                0x00000000                MPU9250::MPU9250(int, char const*, char const*, spi_dev_e, Rotation)
+                0x00000000                MPU9250::MPU9250(int, char const*, char const*, spi_dev_e, Rotation)
+
+.text._ZN12MPU9250_gyro18parent_poll_notifyEv
+                0x00000000        0x8
+ .text._ZN12MPU9250_gyro18parent_poll_notifyEv
+                0x00000000        0x8 mpu9250.cpp.o
+                0x00000000                MPU9250_gyro::parent_poll_notify()
+
+.text._ZN7MPU92507measureEv
+                0x00000000      0x390
+ .text._ZN7MPU92507measureEv
+                0x00000000      0x390 mpu9250.cpp.o
+                0x00000000                MPU9250::measure()
+
+.text._ZN7MPU92504readEP4filePcj
+                0x00000000       0x6e
+ .text._ZN7MPU92504readEP4filePcj
+                0x00000000       0x6e mpu9250.cpp.o
+                0x00000000                MPU9250::read(file*, char*, unsigned int)
+
+.text._ZN7MPU92509self_testEv
+                0x00000000       0x2c
+ .text._ZN7MPU92509self_testEv
+                0x00000000       0x2c mpu9250.cpp.o
+                0x00000000                MPU9250::self_test()
+
+.text._ZN7MPU925015accel_self_testEv
+                0x00000000       0xc0
+ .text._ZN7MPU925015accel_self_testEv
+                0x00000000       0xc0 mpu9250.cpp.o
+                0x00000000                MPU9250::accel_self_test()
+
+.text._ZN7MPU925014gyro_self_testEv
+                0x00000000       0xc8
+ .text._ZN7MPU925014gyro_self_testEv
+                0x00000000       0xc8 mpu9250.cpp.o
+                0x00000000                MPU9250::gyro_self_test()
+
+.text._ZN7MPU92509gyro_readEP4filePcj
+                0x00000000       0x6e
+ .text._ZN7MPU92509gyro_readEP4filePcj
+                0x00000000       0x6e mpu9250.cpp.o
+                0x00000000                MPU9250::gyro_read(file*, char*, unsigned int)
+
+.text._ZN7MPU925018measure_trampolineEPv
+                0x00000000        0x4
+ .text._ZN7MPU925018measure_trampolineEPv
+                0x00000000        0x4 mpu9250.cpp.o
+                0x00000000                MPU9250::measure_trampoline(void*)
+
+.text._ZN7mpu92505startEb8Rotation
+                0x00000000       0xc8
+ .text._ZN7mpu92505startEb8Rotation
+                0x00000000       0xc8 mpu9250.cpp.o
+                0x00000000                mpu9250::start(bool, Rotation)
+
+.text._ZN7mpu92504stopEb
+                0x00000000       0x34
+ .text._ZN7mpu92504stopEb
+                0x00000000       0x34 mpu9250.cpp.o
+                0x00000000                mpu9250::stop(bool)
+
+.text._ZN7mpu92505resetEb
+                0x00000000       0x70
+ .text._ZN7mpu92505resetEb
+                0x00000000       0x70 mpu9250.cpp.o
+                0x00000000                mpu9250::reset(bool)
+
+.text._ZN7mpu92504testEb
+                0x00000000      0x248
+ .text._ZN7mpu92504testEb
+                0x00000000      0x248 mpu9250.cpp.o
+                0x00000000                mpu9250::test(bool)
+
+.text._ZN7mpu92504infoEb
+                0x00000000       0x38
+ .text._ZN7mpu92504infoEb
+                0x00000000       0x38 mpu9250.cpp.o
+                0x00000000                mpu9250::info(bool)
+
+.text._ZN7mpu92507regdumpEb
+                0x00000000       0x38
+ .text._ZN7mpu92507regdumpEb
+                0x00000000       0x38 mpu9250.cpp.o
+                0x00000000                mpu9250::regdump(bool)
+
+.text._ZN7mpu92509testerrorEb
+                0x00000000       0x2c
+ .text._ZN7mpu92509testerrorEb
+                0x00000000       0x2c mpu9250.cpp.o
+                0x00000000                mpu9250::testerror(bool)
+
+.text._ZN7mpu92505usageEv
+                0x00000000       0x30
+ .text._ZN7mpu92505usageEv
+                0x00000000       0x30 mpu9250.cpp.o
+                0x00000000                mpu9250::usage()
+
+.text.mpu9250_main
+                0x00000000       0xe8
+ .text.mpu9250_main
+                0x00000000       0xe8 mpu9250.cpp.o
+                0x00000000                mpu9250_main
+
+.text._ZN7MPU92504initEv
+                0x00000000      0x128
+ .text._ZN7MPU92504initEv
+                0x00000000      0x128 mpu9250.cpp.o
+                0x00000000                MPU9250::init()
+
+.text._ZN7MPU92505ioctlEP4fileim
+                0x00000000      0x354
+ .text._ZN7MPU92505ioctlEP4fileim
+                0x00000000      0x354 mpu9250.cpp.o
+                0x00000000                MPU9250::ioctl(file*, int, unsigned long)
+
+.text._ZN7MPU925010gyro_ioctlEP4fileim
+                0x00000000      0x1b4
+ .text._ZN7MPU925010gyro_ioctlEP4fileim
+                0x00000000      0x1b4 mpu9250.cpp.o
+                0x00000000                MPU9250::gyro_ioctl(file*, int, unsigned long)
+
+.text._ZN12MPU9250_gyro5ioctlEP4fileim
+                0x00000000       0x1e
+ .text._ZN12MPU9250_gyro5ioctlEP4fileim
+                0x00000000       0x1e mpu9250.cpp.o
+                0x00000000                MPU9250_gyro::ioctl(file*, int, unsigned long)
+
+.text._ZN12MPU9250_gyro4initEv
+                0x00000000       0x30
+ .text._ZN12MPU9250_gyro4initEv
+                0x00000000       0x30 mpu9250.cpp.o
+                0x00000000                MPU9250_gyro::init()
+
+.fini
+ *(SORT(.fini))
+
+.rodata
+ *(.rodata)
+
+.rodata._ZTV12MPU9250_gyro
+                0x00000000       0x5c
+ .rodata._ZTV12MPU9250_gyro
+                0x00000000       0x5c mpu9250.cpp.o
+                0x00000000                vtable for MPU9250_gyro
+
+.rodata.str1.1  0x00000000      0x591
+ .rodata.str1.1
+                0x00000000      0x591 mpu9250.cpp.o
+
+.rodata._ZTV7MPU9250
+                0x00000000       0x68
+ .rodata._ZTV7MPU9250
+                0x00000000       0x68 mpu9250.cpp.o
+                0x00000000                vtable for MPU9250
+
+.rodata._ZN7MPU925018_checked_registersE
+                0x00000000        0xb
+ .rodata._ZN7MPU925018_checked_registersE
+                0x00000000        0xb mpu9250.cpp.o
+                0x00000000                MPU9250::_checked_registers
+
+.rodata1
+ *(.rodata1)
+
+.ARM.extab
+ *(.ARM.extab)
+
+.ARM.exidx
+ *(.ARM.exidx)
+
+.eh_frame_hdr
+ *(.eh_frame_hdr)
+
+.eh_frame
+ *(.eh_frame)
+
+.gcc_except_table
+ *(.gcc_except_table .gcc_except_table.*)
+
+.exception_ranges
+ *(.exception_ranges .exception_ranges*)
+
+.eh_frame
+ *(.eh_frame)
+
+.gcc_except_table
+ *(.gcc_except_table .gcc_except_table.*)
+
+.exception_ranges
+ *(.exception_ranges .exception_ranges*)
+
+.tdata
+ *(.tdata)
+
+.tbss
+ *(.tbss)
+
+.preinit_array
+ *(.preinit_array)
+
+.jcr
+ *(.jcr)
+
+.dynamic
+ *(.dynamic)
+
+.got
+ *(.got.plt)
+ *(.igot.plt)
+ *(.got)
+ *(.igot)
+
+.data           0x00000000        0x0
+ *(.data)
+ .data          0x00000000        0x0 mpu9250.cpp.o
+
+.data1
+ *(.data1)
+
+.bss            0x00000000        0x0
+ *(.dynbss)
+ *(.bss)
+ .bss           0x00000000        0x0 mpu9250.cpp.o
+ *(COMMON)
+
+.bss._ZN7mpu92509g_dev_extE
+                0x00000000        0x4
+ .bss._ZN7mpu92509g_dev_extE
+                0x00000000        0x4 mpu9250.cpp.o
+                0x00000000                mpu9250::g_dev_ext
+
+.bss._ZN7mpu92509g_dev_intE
+                0x00000000        0x4
+ .bss._ZN7mpu92509g_dev_intE
+                0x00000000        0x4 mpu9250.cpp.o
+                0x00000000                mpu9250::g_dev_int
+
+.stab
+ *(.stab)
+
+.stabstr
+ *(.stabstr)
+
+.stab.excl
+ *(.stab.excl)
+
+.stab.exclstr
+ *(.stab.exclstr)
+
+.stab.index
+ *(.stab.index)
+
+.stab.indexstr
+ *(.stab.indexstr)
+
+.comment        0x00000000       0x71
+ *(.comment)
+ .comment       0x00000000       0x71 mpu9250.cpp.o
+
+.group          0x00000000        0x8
+ .group         0x00000000        0x8 mpu9250.cpp.o
+
+.group          0x00000000        0x8
+ .group         0x00000000        0x8 mpu9250.cpp.o
+
+.group          0x00000000        0x8
+ .group         0x00000000        0x8 mpu9250.cpp.o
+
+.group          0x00000000        0x8
+ .group         0x00000000        0x8 mpu9250.cpp.o
+
+.group          0x00000000        0x8
+ .group         0x00000000        0x8 mpu9250.cpp.o
+
+.group          0x00000000        0x8
+ .group         0x00000000        0x8 mpu9250.cpp.o
+
+.group          0x00000000        0x8
+ .group         0x00000000        0x8 mpu9250.cpp.o
+
+.group          0x00000000        0x8
+ .group         0x00000000        0x8 mpu9250.cpp.o
+
+.group          0x00000000        0x8
+ .group         0x00000000        0x8 mpu9250.cpp.o
+
+.group          0x00000000        0x8
+ .group         0x00000000        0x8 mpu9250.cpp.o
+
+.group          0x00000000        0x8
+ .group         0x00000000        0x8 mpu9250.cpp.o
+
+.group          0x00000000        0x8
+ .group         0x00000000        0x8 mpu9250.cpp.o
+
+.group          0x00000000        0x8
+ .group         0x00000000        0x8 mpu9250.cpp.o
+
+.group          0x00000000        0x8
+ .group         0x00000000        0x8 mpu9250.cpp.o
+
+.group          0x00000000        0x8
+ .group         0x00000000        0x8 mpu9250.cpp.o
+
+.group          0x00000000        0x8
+ .group         0x00000000        0x8 mpu9250.cpp.o
+
+.group          0x00000000        0x8
+ .group         0x00000000        0x8 mpu9250.cpp.o
+
+.group          0x00000000        0x8
+ .group         0x00000000        0x8 mpu9250.cpp.o
+
+.group          0x00000000        0x8
+ .group         0x00000000        0x8 mpu9250.cpp.o
+
+.group          0x00000000        0x8
+ .group         0x00000000        0x8 mpu9250.cpp.o
+
+.group          0x00000000        0x8
+ .group         0x00000000        0x8 mpu9250.cpp.o
+
+.group          0x00000000        0x8
+ .group         0x00000000        0x8 mpu9250.cpp.o
+
+.group          0x00000000        0x8
+ .group         0x00000000        0x8 mpu9250.cpp.o
+
+.group          0x00000000        0x8
+ .group         0x00000000        0x8 mpu9250.cpp.o
+
+.group          0x00000000        0x8
+ .group         0x00000000        0x8 mpu9250.cpp.o
+
+.group          0x00000000        0x8
+ .group         0x00000000        0x8 mpu9250.cpp.o
+
+.group          0x00000000        0x8
+ .group         0x00000000        0x8 mpu9250.cpp.o
+
+.group          0x00000000        0x8
+ .group         0x00000000        0x8 mpu9250.cpp.o
+
+.group          0x00000000        0x8
+ .group         0x00000000        0x8 mpu9250.cpp.o
+
+.group          0x00000000        0x8
+ .group         0x00000000        0x8 mpu9250.cpp.o
+
+.group          0x00000000        0x8
+ .group         0x00000000        0x8 mpu9250.cpp.o
+
+.group          0x00000000        0x8
+ .group         0x00000000        0x8 mpu9250.cpp.o
+
+.group          0x00000000        0x8
+ .group         0x00000000        0x8 mpu9250.cpp.o
+
+.group          0x00000000        0x8
+ .group         0x00000000        0x8 mpu9250.cpp.o
+
+.group          0x00000000        0x8
+ .group         0x00000000        0x8 mpu9250.cpp.o
+
+.group          0x00000000        0x8
+ .group         0x00000000        0x8 mpu9250.cpp.o
+
+.group          0x00000000        0x8
+ .group         0x00000000        0x8 mpu9250.cpp.o
+
+.group          0x00000000        0x8
+ .group         0x00000000        0x8 mpu9250.cpp.o
+
+.group          0x00000000        0x8
+ .group         0x00000000        0x8 mpu9250.cpp.o
+
+.group          0x00000000        0x8
+ .group         0x00000000        0x8 mpu9250.cpp.o
+
+.group          0x00000000        0x8
+ .group         0x00000000        0x8 mpu9250.cpp.o
+
+.group          0x00000000        0x8
+ .group         0x00000000        0x8 mpu9250.cpp.o
+
+.group          0x00000000        0x8
+ .group         0x00000000        0x8 mpu9250.cpp.o
+
+.group          0x00000000        0x8
+ .group         0x00000000        0x8 mpu9250.cpp.o
+
+.group          0x00000000        0x8
+ .group         0x00000000        0x8 mpu9250.cpp.o
+
+.group          0x00000000        0x8
+ .group         0x00000000        0x8 mpu9250.cpp.o
+
+.group          0x00000000        0x8
+ .group         0x00000000        0x8 mpu9250.cpp.o
+
+.group          0x00000000        0x8
+ .group         0x00000000        0x8 mpu9250.cpp.o
+
+.group          0x00000000        0x8
+ .group         0x00000000        0x8 mpu9250.cpp.o
+
+.group          0x00000000        0x8
+ .group         0x00000000        0x8 mpu9250.cpp.o
+
+.group          0x00000000        0x8
+ .group         0x00000000        0x8 mpu9250.cpp.o
+
+.group          0x00000000        0x8
+ .group         0x00000000        0x8 mpu9250.cpp.o
+
+.group          0x00000000        0x8
+ .group         0x00000000        0x8 mpu9250.cpp.o
+
+.group          0x00000000        0x8
+ .group         0x00000000        0x8 mpu9250.cpp.o
+
+.group          0x00000000        0x8
+ .group         0x00000000        0x8 mpu9250.cpp.o
+
+.group          0x00000000        0x8
+ .group         0x00000000        0x8 mpu9250.cpp.o
+
+.group          0x00000000        0x8
+ .group         0x00000000        0x8 mpu9250.cpp.o
+
+.group          0x00000000        0x8
+ .group         0x00000000        0x8 mpu9250.cpp.o
+
+.group          0x00000000        0x8
+ .group         0x00000000        0x8 mpu9250.cpp.o
+
+.group          0x00000000        0x8
+ .group         0x00000000        0x8 mpu9250.cpp.o
+
+.group          0x00000000        0x8
+ .group         0x00000000        0x8 mpu9250.cpp.o
+
+.group          0x00000000        0x8
+ .group         0x00000000        0x8 mpu9250.cpp.o
+
+.group          0x00000000        0x8
+ .group         0x00000000        0x8 mpu9250.cpp.o
+
+.group          0x00000000        0x8
+ .group         0x00000000        0x8 mpu9250.cpp.o
+
+.group          0x00000000        0x8
+ .group         0x00000000        0x8 mpu9250.cpp.o
+
+.group          0x00000000        0x8
+ .group         0x00000000        0x8 mpu9250.cpp.o
+
+.group          0x00000000        0x8
+ .group         0x00000000        0x8 mpu9250.cpp.o
+
+.group          0x00000000        0x8
+ .group         0x00000000        0x8 mpu9250.cpp.o
+
+.group          0x00000000        0x8
+ .group         0x00000000        0x8 mpu9250.cpp.o
+
+.group          0x00000000        0x8
+ .group         0x00000000        0x8 mpu9250.cpp.o
+
+.group          0x00000000        0x8
+ .group         0x00000000        0x8 mpu9250.cpp.o
+
+.group          0x00000000        0x8
+ .group         0x00000000        0x8 mpu9250.cpp.o
+
+.group          0x00000000        0x8
+ .group         0x00000000        0x8 mpu9250.cpp.o
+
+.group          0x00000000        0x8
+ .group         0x00000000        0x8 mpu9250.cpp.o
+
+.group          0x00000000        0x8
+ .group         0x00000000        0x8 mpu9250.cpp.o
+
+.group          0x00000000        0x8
+ .group         0x00000000        0x8 mpu9250.cpp.o
+
+.group          0x00000000        0x8
+ .group         0x00000000        0x8 mpu9250.cpp.o
+
+.group          0x00000000        0x8
+ .group         0x00000000        0x8 mpu9250.cpp.o
+
+.group          0x00000000        0x8
+ .group         0x00000000        0x8 mpu9250.cpp.o
+
+.group          0x00000000        0x8
+ .group         0x00000000        0x8 mpu9250.cpp.o
+
+.group          0x00000000        0x8
+ .group         0x00000000        0x8 mpu9250.cpp.o
+
+.group          0x00000000        0x8
+ .group         0x00000000        0x8 mpu9250.cpp.o
+
+.group          0x00000000        0x8
+ .group         0x00000000        0x8 mpu9250.cpp.o
+
+.group          0x00000000        0x8
+ .group         0x00000000        0x8 mpu9250.cpp.o
+
+.group          0x00000000        0x8
+ .group         0x00000000        0x8 mpu9250.cpp.o
+
+.group          0x00000000        0x8
+ .group         0x00000000        0x8 mpu9250.cpp.o
+
+.group          0x00000000        0x8
+ .group         0x00000000        0x8 mpu9250.cpp.o
+
+.group          0x00000000        0x8
+ .group         0x00000000        0x8 mpu9250.cpp.o
+
+.group          0x00000000        0x8
+ .group         0x00000000        0x8 mpu9250.cpp.o
+
+.group          0x00000000        0x8
+ .group         0x00000000        0x8 mpu9250.cpp.o
+
+.group          0x00000000        0x8
+ .group         0x00000000        0x8 mpu9250.cpp.o
+
+.group          0x00000000        0x8
+ .group         0x00000000        0x8 mpu9250.cpp.o
+
+.group          0x00000000        0x8
+ .group         0x00000000        0x8 mpu9250.cpp.o
+
+.group          0x00000000        0x8
+ .group         0x00000000        0x8 mpu9250.cpp.o
+
+.group          0x00000000        0x8
+ .group         0x00000000        0x8 mpu9250.cpp.o
+
+.group          0x00000000        0x8
+ .group         0x00000000        0x8 mpu9250.cpp.o
+
+.group          0x00000000        0x8
+ .group         0x00000000        0x8 mpu9250.cpp.o
+
+.group          0x00000000        0x8
+ .group         0x00000000        0x8 mpu9250.cpp.o
+
+.group          0x00000000        0x8
+ .group         0x00000000        0x8 mpu9250.cpp.o
+
+.group          0x00000000        0x8
+ .group         0x00000000        0x8 mpu9250.cpp.o
+
+.group          0x00000000        0x8
+ .group         0x00000000        0x8 mpu9250.cpp.o
+
+.group          0x00000000        0x8
+ .group         0x00000000        0x8 mpu9250.cpp.o
+
+.group          0x00000000        0x8
+ .group         0x00000000        0x8 mpu9250.cpp.o
+
+.group          0x00000000        0x8
+ .group         0x00000000        0x8 mpu9250.cpp.o
+
+.group          0x00000000        0x8
+ .group         0x00000000        0x8 mpu9250.cpp.o
+
+.group          0x00000000        0x8
+ .group         0x00000000        0x8 mpu9250.cpp.o
+
+.group          0x00000000        0x8
+ .group         0x00000000        0x8 mpu9250.cpp.o
+
+.group          0x00000000        0x8
+ .group         0x00000000        0x8 mpu9250.cpp.o
+
+.group          0x00000000        0x8
+ .group         0x00000000        0x8 mpu9250.cpp.o
+
+.group          0x00000000        0x8
+ .group         0x00000000        0x8 mpu9250.cpp.o
+
+.group          0x00000000        0x8
+ .group         0x00000000        0x8 mpu9250.cpp.o
+
+.group          0x00000000        0x8
+ .group         0x00000000        0x8 mpu9250.cpp.o
+
+.group          0x00000000        0x8
+ .group         0x00000000        0x8 mpu9250.cpp.o
+
+.group          0x00000000        0x8
+ .group         0x00000000        0x8 mpu9250.cpp.o
+
+.group          0x00000000        0x8
+ .group         0x00000000        0x8 mpu9250.cpp.o
+
+.group          0x00000000        0x8
+ .group         0x00000000        0x8 mpu9250.cpp.o
+
+.group          0x00000000        0x8
+ .group         0x00000000        0x8 mpu9250.cpp.o
+
+.group          0x00000000        0x8
+ .group         0x00000000        0x8 mpu9250.cpp.o
+
+.debug
+ *(.debug)
+
+.line
+ *(.line)
+
+.debug_srcinfo
+ *(.debug_srcinfo)
+
+.debug_sfnames
+ *(.debug_sfnames)
+
+.debug_aranges  0x00000000      0x188
+ *(.debug_aranges)
+ .debug_aranges
+                0x00000000      0x188 mpu9250.cpp.o
+
+.debug_pubnames
+ *(.debug_pubnames)
+
+.debug_info     0x00000000     0x5a12
+ *(.debug_info)
+ .debug_info    0x00000000     0x5a12 mpu9250.cpp.o
+
+.debug_abbrev   0x00000000      0x8ce
+ *(.debug_abbrev)
+ .debug_abbrev  0x00000000      0x8ce mpu9250.cpp.o
+
+.debug_line     0x00000000     0x20cd
+ *(.debug_line .debug_line.* .debug_line_end)
+ .debug_line    0x00000000     0x20cd mpu9250.cpp.o
+
+.debug_frame    0x00000000      0x64c
+ *(.debug_frame)
+ .debug_frame   0x00000000      0x64c mpu9250.cpp.o
+
+.debug_str      0x00000000    0x4c8fb
+ *(.debug_str)
+ .debug_str     0x00000000    0x4c8fb mpu9250.cpp.o
+
+.debug_loc      0x00000000     0x225c
+ *(.debug_loc)
+ .debug_loc     0x00000000     0x225c mpu9250.cpp.o
+
+.debug_macinfo
+ *(.debug_macinfo)
+
+.debug_weaknames
+ *(.debug_weaknames)
+
+.debug_funcnames
+ *(.debug_funcnames)
+
+.debug_typenames
+ *(.debug_typenames)
+
+.debug_varnames
+ *(.debug_varnames)
+
+.debug_pubtypes
+ *(.debug_pubtypes)
+
+.debug_ranges   0x00000000      0x328
+ *(.debug_ranges)
+ .debug_ranges  0x00000000      0x328 mpu9250.cpp.o
+
+.debug_macro    0x00000000      0x9f0
+ *(.debug_macro)
+ .debug_macro   0x00000000      0x9f0 mpu9250.cpp.o
+
+.stack
+ *(.stack)
+
+.ARM.attributes
+                0x00000000       0x35
+ *(.ARM.attributes)
+ .ARM.attributes
+                0x00000000       0x35 mpu9250.cpp.o
+ *(.gnu.attributes)
+
+.note.gnu.arm.ident
+ *(.note.gnu.arm.ident)
+OUTPUT(/home/apmsel4/ardupilot/modules/PX4Firmware/Build/px4fmu-v2_APM.build//home/apmsel4/ardupilot/modules/PX4Firmware/src/drivers/mpu9250/module.pre.o elf32-littlearm)
+
+.debug_macro    0x00000000      0x93a
+ .debug_macro   0x00000000      0x93a mpu9250.cpp.o
+
+.debug_macro    0x00000000       0x22
+ .debug_macro   0x00000000       0x22 mpu9250.cpp.o
+
+.debug_macro    0x00000000      0x8a6
+ .debug_macro   0x00000000      0x8a6 mpu9250.cpp.o
+
+.debug_macro    0x00000000       0xc9
+ .debug_macro   0x00000000       0xc9 mpu9250.cpp.o
+
+.debug_macro    0x00000000       0x10
+ .debug_macro   0x00000000       0x10 mpu9250.cpp.o
+
+.debug_macro    0x00000000       0x88
+ .debug_macro   0x00000000       0x88 mpu9250.cpp.o
+
+.debug_macro    0x00000000      0x14e
+ .debug_macro   0x00000000      0x14e mpu9250.cpp.o
+
+.debug_macro    0x00000000      0x125
+ .debug_macro   0x00000000      0x125 mpu9250.cpp.o
+
+.debug_macro    0x00000000       0x5d
+ .debug_macro   0x00000000       0x5d mpu9250.cpp.o
+
+.debug_macro    0x00000000       0x5e
+ .debug_macro   0x00000000       0x5e mpu9250.cpp.o
+
+.debug_macro    0x00000000       0x23
+ .debug_macro   0x00000000       0x23 mpu9250.cpp.o
+
+.debug_macro    0x00000000       0x28
+ .debug_macro   0x00000000       0x28 mpu9250.cpp.o
+
+.debug_macro    0x00000000      0x14d
+ .debug_macro   0x00000000      0x14d mpu9250.cpp.o
+
+.debug_macro    0x00000000       0x59
+ .debug_macro   0x00000000       0x59 mpu9250.cpp.o
+
+.debug_macro    0x00000000      0x6c1
+ .debug_macro   0x00000000      0x6c1 mpu9250.cpp.o
+
+.debug_macro    0x00000000       0x58
+ .debug_macro   0x00000000       0x58 mpu9250.cpp.o
+
+.debug_macro    0x00000000       0x4c
+ .debug_macro   0x00000000       0x4c mpu9250.cpp.o
+
+.debug_macro    0x00000000       0x49
+ .debug_macro   0x00000000       0x49 mpu9250.cpp.o
+
+.debug_macro    0x00000000      0x106
+ .debug_macro   0x00000000      0x106 mpu9250.cpp.o
+
+.debug_macro    0x00000000       0x28
+ .debug_macro   0x00000000       0x28 mpu9250.cpp.o
+
+.debug_macro    0x00000000       0xd1
+ .debug_macro   0x00000000       0xd1 mpu9250.cpp.o
+
+.debug_macro    0x00000000       0x98
+ .debug_macro   0x00000000       0x98 mpu9250.cpp.o
+
+.debug_macro    0x00000000       0x16
+ .debug_macro   0x00000000       0x16 mpu9250.cpp.o
+
+.debug_macro    0x00000000       0x59
+ .debug_macro   0x00000000       0x59 mpu9250.cpp.o
+
+.debug_macro    0x00000000      0x11b
+ .debug_macro   0x00000000      0x11b mpu9250.cpp.o
+
+.debug_macro    0x00000000       0x46
+ .debug_macro   0x00000000       0x46 mpu9250.cpp.o
+
+.debug_macro    0x00000000      0x27f
+ .debug_macro   0x00000000      0x27f mpu9250.cpp.o
+
+.debug_macro    0x00000000       0x10
+ .debug_macro   0x00000000       0x10 mpu9250.cpp.o
+
+.debug_macro    0x00000000      0x195
+ .debug_macro   0x00000000      0x195 mpu9250.cpp.o
+
+.debug_macro    0x00000000       0x8a
+ .debug_macro   0x00000000       0x8a mpu9250.cpp.o
+
+.debug_macro    0x00000000       0x10
+ .debug_macro   0x00000000       0x10 mpu9250.cpp.o
+
+.debug_macro    0x00000000       0x10
+ .debug_macro   0x00000000       0x10 mpu9250.cpp.o
+
+.debug_macro    0x00000000       0x39
+ .debug_macro   0x00000000       0x39 mpu9250.cpp.o
+
+.debug_macro    0x00000000       0xb4
+ .debug_macro   0x00000000       0xb4 mpu9250.cpp.o
+
+.debug_macro    0x00000000       0x41
+ .debug_macro   0x00000000       0x41 mpu9250.cpp.o
+
+.debug_macro    0x00000000       0x4d
+ .debug_macro   0x00000000       0x4d mpu9250.cpp.o
+
+.debug_macro    0x00000000       0x58
+ .debug_macro   0x00000000       0x58 mpu9250.cpp.o
+
+.debug_macro    0x00000000       0x22
+ .debug_macro   0x00000000       0x22 mpu9250.cpp.o
+
+.debug_macro    0x00000000       0x2e
+ .debug_macro   0x00000000       0x2e mpu9250.cpp.o
+
+.debug_macro    0x00000000       0x9c
+ .debug_macro   0x00000000       0x9c mpu9250.cpp.o
+
+.debug_macro    0x00000000      0x281
+ .debug_macro   0x00000000      0x281 mpu9250.cpp.o
+
+.debug_macro    0x00000000       0x1c
+ .debug_macro   0x00000000       0x1c mpu9250.cpp.o
+
+.debug_macro    0x00000000       0x16
+ .debug_macro   0x00000000       0x16 mpu9250.cpp.o
+
+.debug_macro    0x00000000       0x1c
+ .debug_macro   0x00000000       0x1c mpu9250.cpp.o
+
+.debug_macro    0x00000000       0x22
+ .debug_macro   0x00000000       0x22 mpu9250.cpp.o
+
+.debug_macro    0x00000000       0x29
+ .debug_macro   0x00000000       0x29 mpu9250.cpp.o
+
+.debug_macro    0x00000000       0x2b
+ .debug_macro   0x00000000       0x2b mpu9250.cpp.o
+
+.debug_macro    0x00000000      0x167
+ .debug_macro   0x00000000      0x167 mpu9250.cpp.o
+
+.debug_macro    0x00000000       0x10
+ .debug_macro   0x00000000       0x10 mpu9250.cpp.o
+
+.debug_macro    0x00000000       0x3c
+ .debug_macro   0x00000000       0x3c mpu9250.cpp.o
+
+.debug_macro    0x00000000       0x16
+ .debug_macro   0x00000000       0x16 mpu9250.cpp.o
+
+.debug_macro    0x00000000       0x19
+ .debug_macro   0x00000000       0x19 mpu9250.cpp.o
+
+.debug_macro    0x00000000       0xc1
+ .debug_macro   0x00000000       0xc1 mpu9250.cpp.o
+
+.debug_macro    0x00000000       0x78
+ .debug_macro   0x00000000       0x78 mpu9250.cpp.o
+
+.debug_macro    0x00000000       0x28
+ .debug_macro   0x00000000       0x28 mpu9250.cpp.o
+
+.debug_macro    0x00000000      0x6cb
+ .debug_macro   0x00000000      0x6cb mpu9250.cpp.o
+
+.debug_macro    0x00000000      0x20a
+ .debug_macro   0x00000000      0x20a mpu9250.cpp.o
+
+.debug_macro    0x00000000      0xf6f
+ .debug_macro   0x00000000      0xf6f mpu9250.cpp.o
+
+.debug_macro    0x00000000      0x2ab
+ .debug_macro   0x00000000      0x2ab mpu9250.cpp.o
+
+.debug_macro    0x00000000      0x8b5
+ .debug_macro   0x00000000      0x8b5 mpu9250.cpp.o
+
+.debug_macro    0x00000000       0x78
+ .debug_macro   0x00000000       0x78 mpu9250.cpp.o
+
+.debug_macro    0x00000000      0x14e
+ .debug_macro   0x00000000      0x14e mpu9250.cpp.o
+
+.debug_macro    0x00000000      0x7ca
+ .debug_macro   0x00000000      0x7ca mpu9250.cpp.o
+
+.debug_macro    0x00000000       0xff
+ .debug_macro   0x00000000       0xff mpu9250.cpp.o
+
+.debug_macro    0x00000000      0xae7
+ .debug_macro   0x00000000      0xae7 mpu9250.cpp.o
+
+.debug_macro    0x00000000       0x51
+ .debug_macro   0x00000000       0x51 mpu9250.cpp.o
+
+.debug_macro    0x00000000      0x11a
+ .debug_macro   0x00000000      0x11a mpu9250.cpp.o
+
+.debug_macro    0x00000000       0x16
+ .debug_macro   0x00000000       0x16 mpu9250.cpp.o
+
+.debug_macro    0x00000000       0x1d
+ .debug_macro   0x00000000       0x1d mpu9250.cpp.o
+
+.debug_macro    0x00000000      0x206
+ .debug_macro   0x00000000      0x206 mpu9250.cpp.o
+
+.debug_macro    0x00000000      0x56a
+ .debug_macro   0x00000000      0x56a mpu9250.cpp.o
+
+.debug_macro    0x00000000       0x9c
+ .debug_macro   0x00000000       0x9c mpu9250.cpp.o
+
+.debug_macro    0x00000000      0x2bf
+ .debug_macro   0x00000000      0x2bf mpu9250.cpp.o
+
+.debug_macro    0x00000000       0xd3
+ .debug_macro   0x00000000       0xd3 mpu9250.cpp.o
+
+.debug_macro    0x00000000       0x16
+ .debug_macro   0x00000000       0x16 mpu9250.cpp.o
+
+.debug_macro    0x00000000       0x34
+ .debug_macro   0x00000000       0x34 mpu9250.cpp.o
+
+.debug_macro    0x00000000      0xab0
+ .debug_macro   0x00000000      0xab0 mpu9250.cpp.o
+
+.debug_macro    0x00000000       0x17
+ .debug_macro   0x00000000       0x17 mpu9250.cpp.o
+
+.debug_macro    0x00000000      0x6fa
+ .debug_macro   0x00000000      0x6fa mpu9250.cpp.o
+
+.debug_macro    0x00000000       0x22
+ .debug_macro   0x00000000       0x22 mpu9250.cpp.o
+
+.debug_macro    0x00000000      0x596
+ .debug_macro   0x00000000      0x596 mpu9250.cpp.o
+
+.debug_macro    0x00000000       0x16
+ .debug_macro   0x00000000       0x16 mpu9250.cpp.o
+
+.debug_macro    0x00000000      0x29b
+ .debug_macro   0x00000000      0x29b mpu9250.cpp.o
+
+.debug_macro    0x00000000       0x16
+ .debug_macro   0x00000000       0x16 mpu9250.cpp.o
+
+.debug_macro    0x00000000     0x15a4
+ .debug_macro   0x00000000     0x15a4 mpu9250.cpp.o
+
+.debug_macro    0x00000000       0x53
+ .debug_macro   0x00000000       0x53 mpu9250.cpp.o
+
+.debug_macro    0x00000000      0x347
+ .debug_macro   0x00000000      0x347 mpu9250.cpp.o
+
+.debug_macro    0x00000000       0x96
+ .debug_macro   0x00000000       0x96 mpu9250.cpp.o
+
+.debug_macro    0x00000000       0x1c
+ .debug_macro   0x00000000       0x1c mpu9250.cpp.o
+
+.debug_macro    0x00000000       0x9a
+ .debug_macro   0x00000000       0x9a mpu9250.cpp.o
+
+.debug_macro    0x00000000      0x1cf
+ .debug_macro   0x00000000      0x1cf mpu9250.cpp.o
+
+.debug_macro    0x00000000      0x16c
+ .debug_macro   0x00000000      0x16c mpu9250.cpp.o
+
+.debug_macro    0x00000000      0x413
+ .debug_macro   0x00000000      0x413 mpu9250.cpp.o
+
+.debug_macro    0x00000000       0x5f
+ .debug_macro   0x00000000       0x5f mpu9250.cpp.o
+
+.debug_macro    0x00000000       0x1d
+ .debug_macro   0x00000000       0x1d mpu9250.cpp.o
+
+.debug_macro    0x00000000       0xdf
+ .debug_macro   0x00000000       0xdf mpu9250.cpp.o
+
+.debug_macro    0x00000000       0x16
+ .debug_macro   0x00000000       0x16 mpu9250.cpp.o
+
+.debug_macro    0x00000000      0x13f
+ .debug_macro   0x00000000      0x13f mpu9250.cpp.o
+
+.debug_macro    0x00000000       0x16
+ .debug_macro   0x00000000       0x16 mpu9250.cpp.o
+
+.debug_macro    0x00000000       0x1c
+ .debug_macro   0x00000000       0x1c mpu9250.cpp.o
+
+.debug_macro    0x00000000      0xdb4
+ .debug_macro   0x00000000      0xdb4 mpu9250.cpp.o
+
+.debug_macro    0x00000000       0x16
+ .debug_macro   0x00000000       0x16 mpu9250.cpp.o
+
+.debug_macro    0x00000000      0x21b
+ .debug_macro   0x00000000      0x21b mpu9250.cpp.o
+
+.debug_macro    0x00000000      0x24d
+ .debug_macro   0x00000000      0x24d mpu9250.cpp.o
+
+.debug_macro    0x00000000       0x40
+ .debug_macro   0x00000000       0x40 mpu9250.cpp.o
+
+.debug_macro    0x00000000       0x18
+ .debug_macro   0x00000000       0x18 mpu9250.cpp.o
+
+.debug_macro    0x00000000       0x1c
+ .debug_macro   0x00000000       0x1c mpu9250.cpp.o
+
+.debug_macro    0x00000000       0x46
+ .debug_macro   0x00000000       0x46 mpu9250.cpp.o
+
+.debug_macro    0x00000000       0x22
+ .debug_macro   0x00000000       0x22 mpu9250.cpp.o
+
+.debug_macro    0x00000000       0xac
+ .debug_macro   0x00000000       0xac mpu9250.cpp.o
+
+.debug_macro    0x00000000       0x72
+ .debug_macro   0x00000000       0x72 mpu9250.cpp.o
+
+.debug_macro    0x00000000       0x77
+ .debug_macro   0x00000000       0x77 mpu9250.cpp.o
+
+.debug_macro    0x00000000       0x20
+ .debug_macro   0x00000000       0x20 mpu9250.cpp.o
+
+.debug_macro    0x00000000       0x3b
+ .debug_macro   0x00000000       0x3b mpu9250.cpp.o
+
+.debug_macro    0x00000000       0x2d
+ .debug_macro   0x00000000       0x2d mpu9250.cpp.o
+
+.debug_macro    0x00000000       0x42
+ .debug_macro   0x00000000       0x42 mpu9250.cpp.o
+
+.debug_macro    0x00000000       0xac
+ .debug_macro   0x00000000       0xac mpu9250.cpp.o
